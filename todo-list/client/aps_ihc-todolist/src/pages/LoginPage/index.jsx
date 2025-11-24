@@ -1,7 +1,8 @@
 import './style.css'
 
 import AuthLayout from '../../layouts/AuthLayout'
-import LoginForm from '../../components/LoginForm';
+import Form from '../../components/Form';
+import { loginFields } from './loginFields';
 
 import checklistImg from '../../assets/checklist-img.png'
 
@@ -22,7 +23,7 @@ function LoginPage() {
     
     <AuthLayout illustration={<LoginIllustration/>}>
       <IconUser/>
-      <LoginForm/>
+      <Form fields={loginFields} labelText='Digite o seu'/>
     </AuthLayout>
     
   )
