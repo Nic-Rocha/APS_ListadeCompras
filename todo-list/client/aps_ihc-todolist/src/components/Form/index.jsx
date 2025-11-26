@@ -37,7 +37,6 @@ function Form({fields, onSubmit, endText, submitText = "Enviar"}) {
         ))}
       </div>
 
-        {/* TODO: Commitar Mudança no Botão */}
       <button type="submit">{submitText}</button>
 
       {endText}

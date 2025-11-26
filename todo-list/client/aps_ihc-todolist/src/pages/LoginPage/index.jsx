@@ -26,7 +26,6 @@ function LoginPage() {
     
     <AuthLayout illustration={<LoginIllustration/>}>
       <IconUser/>
-      {/* TODO: Commitar Mudança no Botão */}
       <Form fields={loginFields} submitText="Entrar" endText={<CriarContaText/>}/>
     </AuthLayout>
     

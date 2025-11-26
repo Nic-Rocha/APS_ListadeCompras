@@ -19,8 +19,6 @@
     color: var(--cor-secundaria);
 }
 
-/* TODO: Commitar Mudança no Style das Imagens */
-
 .auth-content {
     display: flex;
     align-items: center;
