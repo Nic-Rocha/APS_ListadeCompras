@@ -1,7 +1,8 @@
 import './style.css'
-export default function ListPage() {
+
+function ListPage() {
   return (
-    <div>
+    <div className='listPage-wrapper'>
       <main>
         <img class="gatinho" src="../../../src/assets/comprasgato.png" alt="compras_gato" />
         <form action="">
@@ -36,3 +37,5 @@ export default function ListPage() {
     </div>
   )
 }
+
+export default ListPage

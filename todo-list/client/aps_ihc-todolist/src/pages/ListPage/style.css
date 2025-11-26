@@ -1,20 +1,7 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+.listPage-wrapper {
+    width: 100vw;
+    height: 100vh;
 
-:root {
-    --cor-primaria: #E2A16F;
-    --cor-secundaria: #D1D3D4;
-    --neutro: #ffffff;
-    --cor-terciaria: #FFF0DD;
-    --fonte-titulo: "Krona One", sans-serif;
-    --fonte-texto: 'Numans', sans-serif;
-    --degrade-azul: linear-gradient(180deg, #f59bc6 0%, #c0b0da 100%);
-}
-
-body {
     background-image: url(../../../src/Assets/APSbackground.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -23,6 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 main {
@@ -118,7 +106,7 @@ form {
     display: flex;
     gap: 8px;
 }
-x
+
 ul {
     list-style-type: none;
 }
