@@ -72,6 +72,7 @@ function LoginPage() {
     <AuthLayout illustration={<LoginIllustration/>}>
       <IconUser/>
       <Form 
+      nameClass={"input"}
       fields={loginFields}
       onSubmit={handleLoginSubmit}
       submitText="Entrar" 

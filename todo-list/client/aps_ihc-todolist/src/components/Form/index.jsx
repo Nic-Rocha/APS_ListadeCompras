@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import './style.css'
 
-function Form({fields, onSubmit, endText, submitText = "Enviar"}) {
+function Form({fields, onSubmit, endText, nameClass, submitText = "Enviar"}) {
   const initialData = fields.reduce((acc, field) => {
       acc[field.name] = "";
       return acc
@@ -27,7 +27,7 @@ function Form({fields, onSubmit, endText, submitText = "Enviar"}) {
     
     <form className="login-form" onSubmit={handleSubmit}>
 
-      <div className="input">
+      <div className={nameClass}>
         {fields.map((field) => (
           <div key={field.name}>
             <label htmlFor={field.name}>{field.label}</label>
