@@ -136,11 +136,6 @@ ul {
     transform: rotate(-140deg);
 }
 
-.texto-data {
-    font-size: 12px;
-    line-height: 20px;
-}
-
 .item-lista-button {
     border: none;
     background-color: transparent;

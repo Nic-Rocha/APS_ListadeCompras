@@ -31,7 +31,7 @@ function Form({fields, onSubmit, endText, containerWrapper, submitText = "Enviar
         {fields.map((field) => (
           <div key={field.name}>
             <label htmlFor={field.name}>{field.label}</label>
-            <input id={field.name} name={field.name} type={field.type || 'text'} placeholder={field.placeholder} value={formData[field.name]} onChange={handleChange}/>
+            <input id={field.name} name={field.name} type={field.type || 'text'} placeholder={field.placeholder} value={formData[field.name] || ""} onChange={handleChange}/>
           </div>
 
         ))}
