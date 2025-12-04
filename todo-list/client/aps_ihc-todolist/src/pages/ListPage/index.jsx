@@ -111,6 +111,34 @@ function ListPage() {
         return <div className="list-page-wrapper">Erro: {error}</div>;
     }
 
+    const handleDeleteItem = async (itemId) => {
+        if (!window.confirm("Tem certeza que deseja excluir este item?")) return;
+
+        const token = getAuthToken();
+        if (!token) return;
+
+        try {
+            const response = await fetch(`${API_BASE_URL}/tasks/${itemId}`, {
+                method: 'DELETE',
+                headers: {
+                    'Authorization': `Bearer ${token}`,
+                },
+            });
+
+            if (!response.ok) {
+                throw new Error('Falha ao deletar o item.');
+            }
+
+            setListItems(prevItems => prevItems.filter(item => item.id !== itemId));
+            
+            alert("Item removido!");
+
+        } catch (err) {
+            console.error("Erro ao deletar:", err);
+            alert("Erro ao deletar o item.");
+        }
+    };
+
   return (
       <div className='list-page-wrapper'>
         <div className='list-page-container'>
@@ -137,6 +165,7 @@ function ListPage() {
                     description={item.description} 
                     deadline={item.deadline}
                     data={item.deadline} 
+                    deleteFunction={() => handleDeleteItem(item.id)}
                   />
                 ))
               ) : (

@@ -3,7 +3,7 @@
     width: 100vw;
     height: 100vh;
 
-    background-image: url(../../../src/Assets/APSbackground.jpg);
+    background-image: url(../../../src/Assets/APSbackground.png);
     background-size: cover;
 
     display: flex;
@@ -107,22 +107,27 @@ ul {
     list-style-type: none;
 }
 
-/* 
-.checkbox-customizado {
+
+.checkbox{
     width: 20px;
     height: 20px;
+
     background-color: var(--neutro);
-    border: 1px solid var(--verde);
+    border: 2px solid var(--cor-secundaria);
     cursor: pointer;
-    border-radius: 4px;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
-.checked {
-    background-color: var(--verde);
+.checkbox:checked {
+    background-color: var(--cor-secundaria);
     position: relative;
+    
+    appearance: none;
+    -webkit-appearance: none;
 }
 
-.checkbox-customizado.checked::after {
+.checkbox:checked::after {
     content: "";
     position: absolute;
     left: 30%;
@@ -134,15 +139,7 @@ ul {
     border-left: 2px solid var(--neutro);
 
     transform: rotate(-140deg);
-}
 
-.texto-data {
-    font-size: 12px;
-    line-height: 20px;
+    appearance: none;
+    -webkit-appearance: none;
 }
-
-.item-lista-button {
-    border: none;
-    background-color: transparent;
-}
- */

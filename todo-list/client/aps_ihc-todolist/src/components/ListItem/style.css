@@ -3,7 +3,7 @@ li {
     
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     gap: .5rem;
 
@@ -13,9 +13,17 @@ li {
 
 }
 
+li .texto{
+    color: var(--cor-secundaria);
+    font-weight: 600;
+    font-family: var(--fonte-texto);
+}
+
 li .texto-data {
     font-size: .7rem;
     line-height: 1.25rem;
+    font-weight: 400;
+    color: var(--cor-secundaria);
 }
 
 .list-item-container, .table-item {
@@ -24,5 +32,23 @@ li .texto-data {
 
 .table-item tbody tr {
     display: grid;
-    grid-template-columns: 0.25fr 1fr 1fr 1fr;
+    grid-template-rows: 0.25fr 1fr 1fr 1fr 0.25fr;
+}
+
+.fa-solid {
+    color: var(--cor-primaria);
+    position: relative;
+    cursor: pointer;
+
+}
+
+.lixeira{
+    background: none; 
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lixeira:hover {
+    opacity: 0.7;
 }
