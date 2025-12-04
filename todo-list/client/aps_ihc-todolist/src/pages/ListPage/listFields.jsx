@@ -1,18 +1,18 @@
 export const listFields = [
     {
         name: "title", 
-        label: "Title", 
+        label: "", 
         type: "text", 
         placeholder: "Nome do item:"},
 
     {
         name: "description", 
-        label: "Description", 
+        label: "", 
         type: "text", 
-        placeholder: "Quantidade:"},
+        placeholder: "Descrição:"},
     {
         name: "deadline", 
-        label: "Deadline",
-        type: "text", 
-        placeholder: "Valor:"}
+        label: "",
+        type: "date", 
+        placeholder: "data para realizar:"}
 ]
