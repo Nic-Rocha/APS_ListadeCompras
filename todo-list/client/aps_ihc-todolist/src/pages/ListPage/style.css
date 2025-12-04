@@ -141,5 +141,6 @@ ul {
     border: none;
     background-color: transparent;
 }
-label{
-color: aliceblue;}
+label {
+    font-family: var(--fonte-texto);
+}
