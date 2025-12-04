@@ -55,7 +55,10 @@ function RegisterPage() {
     <AuthLayout illustration={<RegisterIllustration/>}>
 
         <IconUser/>
-        <Form 
+        <Form
+        containerWrapper={"input"}
+        formStyle={"login-form"}
+        buttomStyle={"button-login-register"}
         fields={registerFields} 
         onSubmit={handleRegister} 
         submitText="Registrar"

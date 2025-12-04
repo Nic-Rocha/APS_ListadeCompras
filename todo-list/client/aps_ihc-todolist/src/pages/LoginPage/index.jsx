@@ -63,13 +63,13 @@ function LoginPage() {
     
     <AuthLayout illustration={<LoginIllustration/>}>
       <IconUser/>
-      <Form 
-        nameClass={"input"}
+      <Form
+        containerWrapper={"input"}
+        formStyle={"login-form"}
         fields={loginFields}
         onSubmit={handleLoginSubmit}
         submitText="Entrar" 
         endText={<CriarContaText/>}
-        formStyle={"login-form"}
         buttomStyle={"button-login-register"}
       />
     </AuthLayout>
